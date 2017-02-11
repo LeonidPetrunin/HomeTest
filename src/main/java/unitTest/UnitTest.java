@@ -12,10 +12,6 @@ public class UnitTest {
         System.setProperty("C:\\Users\\MyHome\\IdeaProjects\\TestSearch", "chromedriver.exe");
         WebDriver webDriver = new ChromeDriver();
         TestFrameworkSearchAndEnterVkSite testFrameworkSearchAndEnterVkSite = new TestFrameworkSearchAndEnterVkSite(webDriver);
-
-
-
-
         webDriver.get("https://google.co.il");
         testFrameworkSearchAndEnterVkSite.googleSearch("vk.com");
         testFrameworkSearchAndEnterVkSite.validateVkPage();
